@@ -88,6 +88,7 @@ inquirer
         shell.cp('-Rf', resolve('../template/src'), `${projectFolder}/`);
         shell.cp('-Rf', resolve('../template/test'), `${projectFolder}/`);
         shell.cp('-Rf', resolve('../template/types'), `${projectFolder}/`);
+        shell.cp('-Rf', resolve('../template/.editorconfig'), `${projectFolder}/`);
         shell.cp('-Rf', resolve('../template/babel.config.js'), `${projectFolder}/`);
         shell.cp('-Rf', resolve('../template/declareModule.d.ts'), `${projectFolder}/`);
         shell.cp('-Rf', resolve('../template/postcss.config.js'), `${projectFolder}/`);
