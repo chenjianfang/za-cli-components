@@ -1,0 +1,19 @@
+{
+    "name": "@za/common-",
+    "version": "0.0.0",
+    "description": "",
+    "main": "libs/index.esm.js",
+    "files": [
+        "types",
+        "libs",
+        "test",
+        "package.json",
+        "readme.md"
+    ],
+    "types": "types/index.d.ts",
+    "author": "ZAFE",
+    "license": "MIT",
+    "devDependencies": {
+        "@za-build/components": "^0.0.2"
+    }
+}

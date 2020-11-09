@@ -1,0 +1,23 @@
+{
+  "name": "@za-cli/components",
+  "version": "0.0.5",
+  "description": "命令用来生成JS组件目录接口",
+  "bin": {
+    "za-init-components": "./bin/init.js"
+  },
+  "files": [
+    "bin",
+    "template",
+    "package.json",
+    ".gitignore",
+    "readme.md"
+  ],
+  "author": "chenjianfang",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "inquirer": "^7.3.3",
+    "shelljs": "^0.8.4"
+  }
+}
