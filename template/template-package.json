@@ -14,6 +14,6 @@
     "author": "ZAFE",
     "license": "MIT",
     "devDependencies": {
-        "@za-build/components": "^0.0.2"
+        "@za-build/components": "^0.0.3"
     }
 }

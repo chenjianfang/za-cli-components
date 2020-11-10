@@ -1,6 +1,6 @@
 {
   "name": "@za-cli/components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "命令用来生成JS组件目录接口",
   "bin": {
     "za-init-components": "./bin/init.js"
