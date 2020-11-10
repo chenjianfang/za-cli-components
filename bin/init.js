@@ -94,6 +94,7 @@ inquirer
         shell.cp('-Rf', resolve('../template/postcss.config.js'), `${projectFolder}/`);
         shell.cp('-Rf', resolve('../template/readme.md'), `${projectFolder}/`);
         shell.cp('-Rf', resolve('../template/tsconfig.json'), `${projectFolder}/`);
+        shell.cp('-Rf', resolve('../template/template.ignore'), `${projectFolder}/.gitignore`);
 
         shell.cd(projectFolder);
 
