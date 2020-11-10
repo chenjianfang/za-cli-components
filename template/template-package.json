@@ -2,7 +2,7 @@
     "name": "@za/common-",
     "version": "0.0.0",
     "description": "",
-    "main": "libs/index.esm.js",
+    "main": "libs/index.esm.min.js",
     "files": [
         "types",
         "libs",

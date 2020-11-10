@@ -3,7 +3,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import { getBabelOutputPlugin } from '@rollup/plugin-babel';
 import replace from '@rollup/plugin-replace';
-import postcss from 'rollup-plugin-postcss'
+import postcss from 'rollup-plugin-postcss';
+import { terser } from "rollup-plugin-terser";
 
 const utils = require('./utils');
 const cwdRoot = utils.cwdRoot;
@@ -19,12 +20,29 @@ export default {
     output: [
         {
             file: cwdRoot('libs/index.esm.js'),
-            format: 'esm'
+            format: 'esm',
+        },
+        {
+            file: cwdRoot('libs/index.esm.min.js'),
+            format: 'esm',
+            plugins: [
+                terser({
+                    module: true
+                })
+            ]
         },
         {
             name: outputName,
             file: cwdRoot('libs/index.umd.js'),
-            format: 'umd'
+            format: 'umd',
+        },
+        {
+            name: outputName,
+            file: cwdRoot('libs/index.umd.min.js'),
+            format: 'umd',
+            plugins: [
+                terser()
+            ]
         }
     ],
     plugins: [
